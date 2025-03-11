@@ -1,117 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Academic Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Academic Website</title>
   <style>
+    /* GLOBAL STYLES */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f2f2f2;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f5f9fc; /* Mild blue-ish background */
       color: #333;
+      line-height: 1.6;
     }
-    header {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    nav {
-      background: #444;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      text-align: center;
-    }
-    nav ul li {
-      display: inline-block;
-    }
-    nav ul li a {
-      display: block;
-      padding: 14px 20px;
+
+    a {
+      color: #007acc;
       text-decoration: none;
-      color: #fff;
     }
-    nav ul li a:hover {
-      background: #555;
+    a:hover {
+      text-decoration: underline;
     }
-    section {
-      background: #fff;
-      margin: 20px;
+
+    /* NAVIGATION BAR */
+    .navbar {
+      background-color: #cce6ff; /* Mild blue */
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .brand {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .navbar .nav-links a {
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
       padding: 20px;
-      border-radius: 8px;
+      background-color: #fff;
+      border-radius: 5px;
     }
-    .intro img {
-      display: block;
-      margin: 0 auto 20px;
-      max-width: 200px;
+
+    /* INTRO SECTION */
+    #intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+    #intro img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
       border-radius: 50%;
+      margin-right: 20px;
+      margin-bottom: 20px;
     }
+    #intro .intro-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    #intro h2 {
+      margin-top: 0;
+    }
+
+    /* PROJECTS SECTION */
+    #projects h2,
+    #contact h2 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #cce6ff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    #projects ul {
+      list-style: disc inside;
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    /* CONTACT SECTION */
+    #contact p {
+      margin: 10px 0;
+    }
+
+    /* FOOTER */
     footer {
-      background: #333;
-      color: #fff;
       text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+      color: #666;
+      margin: 20px 0 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Academic Personal Website</p>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- NAVIGATION BAR -->
+  <div class="navbar">
+    <div class="brand">Your Name</div>
+    <div class="nav-links">
+      <a href="#intro">Intro</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 
-  <section id="intro" class="intro">
-    <h2>Introduction</h2>
-    <!-- Replace 'your-image.jpg' with the actual image file path -->
-    <img src="your-image.jpg" alt="Your Image">
-    <p>Hello! I am [Your Name], a dedicated academic and researcher at [Your Institution]. I specialize in [Your Field of Study] and am passionate about sharing knowledge and collaborating on innovative projects.</p>
-  </section>
+  <!-- MAIN CONTENT CONTAINER -->
+  <div class="container">
+    
+    <!-- INTRO SECTION -->
+    <section id="intro">
+      <!-- Replace 'your-photo.jpg' with your own image file or an online image URL -->
+      <img src="your-photo.jpg" alt="Profile Photo" />
+      <div class="intro-text">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am <strong>Your Name</strong>, a researcher and educator 
+          at <em>Your Institution</em>. My work focuses on <strong>your field of interest</strong>, 
+          and I enjoy exploring new ideas, collaborating with colleagues, and 
+          mentoring students. I strive to bridge theory and practice to 
+          advance the state of the art in my discipline.
+        </p>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <h3>Project Title 1</h3>
-        <p>Description of project 1. This project focuses on ...</p>
-      </li>
-      <li>
-        <h3>Project Title 2</h3>
-        <p>Description of project 2. In this project, I explore ...</p>
-      </li>
-      <li>
-        <h3>Project Title 3</h3>
-        <p>Description of project 3. The goal of this project is to ...</p>
-      </li>
-    </ul>
-  </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project One:</strong> Brief description of your first project.</li>
+        <li><strong>Project Two:</strong> Brief description of your second project.</li>
+        <li><strong>Project Three:</strong> Brief description of your third project.</li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>If you would like to get in touch, please email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or reach out on my social media profiles.</p>
-    <ul>
-      <li><a href="#">LinkedIn</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">ResearchGate</a></li>
-    </ul>
-  </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to reach out if you’d like to collaborate or learn more about my work. 
+        You can email me at 
+        <a href="mailto:your.email@example.com">your.email@example.com</a>.
+      </p>
+      <p>
+        You can also find me on:
+        <ul>
+          <li><a href="#" target="_blank">Google Scholar</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+          <li><a href="#" target="_blank">Twitter</a></li>
+        </ul>
+      </p>
+    </section>
+  </div>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
+
 </body>
 </html>
