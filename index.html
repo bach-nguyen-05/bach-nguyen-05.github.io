@@ -3,103 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Academic Website</title>
-  <style>
-    /* GLOBAL STYLES */
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f5f9fc; /* Mild blue-ish background */
-      color: #333;
-      line-height: 1.6;
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* NAVIGATION BAR */
-    .navbar {
-      background-color: #cce6ff; /* Mild blue */
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .navbar .brand {
-      font-size: 1.8em;
-      font-weight: bold;
-    }
-    .navbar .nav-links a {
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    /* MAIN CONTAINER */
-    .container {
-      max-width: 1100px; /* Increased width from 800px to 1000px */
-      margin: 35px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-    }
-
-    /* INTRO SECTION */
-    #intro {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      margin-bottom: 30px;
-    }
-    #intro img {
-      width: 250px;   /* Increased width from 150px to 250px */
-      height: 250px;  /* Increased height from 150px to 250px */
-      object-fit: cover;
-      border-radius: 50%;
-      margin-right: 20px;
-      margin-bottom: 20px;
-    }
-    #intro .intro-text {
-      flex: 1;
-      min-width: 250px;
-    }
-    #intro h2 {
-      margin-top: 0;
-    }
-
-    /* PROJECTS & CONTACT HEADINGS */
-    #projects h2,
-    #contact h2 {
-      margin-top: 40px;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #cce6ff;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-    
-    /* PROJECTS SECTION */
-    #projects ul {
-      list-style: disc inside;
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-
-    /* CONTACT SECTION */
-    #contact p {
-      margin: 10px 0;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      color: #666;
-      margin: 20px 0 10px;
-    }
-  </style>
+  <title>About me | Bach Nguyen</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
 
@@ -115,7 +20,7 @@
 
   <!-- MAIN CONTENT CONTAINER -->
   <div class="container">
-    
+
     <!-- INTRO SECTION -->
     <section id="intro">
       <!-- Replace 'self.png' with your own image file or an online image URL -->
@@ -123,9 +28,9 @@
       <div class="intro-text">
         <h2>About Me</h2>
         <p>
-          Hello! I am <strong>Bach Nguyen</strong>, an undergraduate student in Computer Science 
-          at <em>Arizona State University</em>. I mainly focus on 
-          Natural Language Processing (NLP), Computer Vision, and Artificial Neural Networks. 
+          Hello! I am <strong>Bach Nguyen</strong>, an undergraduate student in Computer Science
+          at <em>Arizona State University</em>. I mainly focus on
+          Natural Language Processing (NLP), Computer Vision, and Artificial Neural Networks.
           I enjoy exploring new ideas and collaborating with talented people. I am excited to dive into what I don't know
           and face any difficulties. <br>
           <br>
@@ -146,16 +51,16 @@
         <li>
           GPA: 4.0, Dean's List
         </li>
-
       </ul>
     </section>
+
     <!-- PROJECTS SECTION -->
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li> DeepSeek-R1 Fine-Tune and Benchmark</li>
-        <li> My Animals Classifier (Convolutional Neural Network)</li>
-        <li> Autonomous Car</li>
+        <li><a href="deepseek-finetune.html">DeepSeek-R1 Fine-Tune and Benchmark</a></li>
+        <li><a href="animals-classifier.html">My Animals Classifier (Convolutional Neural Network)</a></li>
+        <li><a href="autonomous-car.html">Autonomous Car</a></li>
       </ul>
     </section>
 
@@ -163,8 +68,8 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        Feel free to reach out if you’d like to collaborate or learn more about my work. 
-        You can email me at 
+        Feel free to reach out if you’d like to collaborate or learn more about my work.
+        You can email me at
         <a href="mailto:dnguy154@asu.edu">dnguy154@asu.edu</a>.
       </p>
       <p>
