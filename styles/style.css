@@ -23,6 +23,7 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
   .navbar .brand {
     font-size: 2.0em;
     font-weight: bold;
@@ -36,7 +37,7 @@ body {
 
   /* MAIN CONTAINER */
   .container {
-    max-width: 1100px; /* Increased width from 800px to 1000px */
+    max-width: 1150px; /* Increased width from 800px to 1000px */
     margin: 35px auto;
     padding: 20px;
     background-color: #fff;
@@ -52,10 +53,11 @@ body {
     margin-top: 20px;
   }
   #intro img {
-    width: 250px;   /* Increased width from 150px to 250px */
-    height: 250px;  /* Increased height from 150px to 250px */
+    width: 270px;   /* Increased width from 150px to 250px */
+    height: 270px;  /* Increased height from 150px to 250px */
     object-fit: cover;
     border-radius: 50%;
+    margin-left: 10px;
     margin-right: 40px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -63,15 +65,31 @@ body {
   #intro .intro-text {
     flex: 1;
     min-width: 250px;
-    max-width: 780px;
+    max-width: 800px;
+    font-size: 18px;
   }
   #intro h2 {
     margin-top: 0;
   }
 
   /* PROJECTS & CONTACT HEADINGS */
+  #education h2,
   #projects h2,
   #contact h2,
+  #education-details h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  #education ul {
+    list-style: disc inside;
+    margin-top: 9px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
   #project-details h2 {
     margin-top: 40px;
     margin-bottom: 10px;
@@ -82,13 +100,28 @@ body {
   /* PROJECTS SECTION */
   #projects ul {
     list-style: disc inside;
-    margin: 10px 0;
+    margin-top: 9px;
+    margin-bottom: 40px;
     padding-left: 20px;
+    font-size: 18px;
   }
 
   /* CONTACT SECTION */
+  #contact-details h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
   #contact p {
-    margin: 10px 0;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  #contact ul {
+    margin-top: 9px;
+    margin-bottom: 40px;
+    font-size: 18px;
   }
 
   /* FOOTER */
