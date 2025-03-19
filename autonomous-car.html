@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DeepSeek-R1 Fine-Tune and Benchmark | Bach Nguyen</title>
+  <title>Autonomous Car Model | Bach Nguyen</title>
   <link rel="stylesheet" href="styles/style.css" />
   <style>
     html {
@@ -13,6 +13,25 @@
     body {
       zoom: 1.2; /* Adjust this value to increase or decrease the zoom level */
     }
+    /* Two-column layout for the project details */
+    .project-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project-description {
+      flex: 1;
+      min-width: 300px;
+    }
+    .project-video {
+      flex: 1;
+      max-width: 560px;
+    }
+    .project-video iframe {
+      width: 100%;
+      height: 315px;
+    }
   </style>
 </head>
 <body>
@@ -21,28 +40,48 @@
   <div class="navbar">
     <div class="brand">Bach Nguyen</div>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="index.html#projects">Projects</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#intro">About me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 
-  <!-- PROJECT DETAILS -->
+  <!-- MAIN CONTENT CONTAINER -->
   <div class="container">
     <section id="project-details">
-      <h2>DeepSeek-R1 Fine-Tune and Benchmark</h2>
-      <p>
-        This project involved fine-tuning the DeepSeek-R1 model and benchmarking its performance on various datasets.
-        <br><br>
-        <strong>Technologies Used:</strong> Python, PyTorch, Hugging Face Transformers.
-        <br><br>
-        <strong>Key Achievements:</strong>
-      </p>
-      <ul>
-        <li>Achieved a 10% improvement in accuracy on the benchmark dataset.</li>
-        <li>Optimized the model for faster inference times.</li>
-      </ul>
-      <a href="index.html#projects">Back to Projects</a>
+      <h2>Autonomous Car</h2>
+      <div class="project-content">
+        <div class="project-description">
+          <p>
+            This project is a collaboration of me and other 3 teammates where we are given a vehicle with only 2 sensors to detect color and distance to the walls.
+          </p>
+          <p>
+            The task is very simple:
+          </p>
+          <ul>
+            <li>Given any random map (same area)</li>
+            <li>Reach the yellow line without crashing</li>
+            <li>Return to the green line without crashing</li>
+            <li>Finish in 5 minutes</li>
+          </ul>
+          <p>
+            Our team provided the best solution among 6 teams. This is the key features of our algorithm:
+          </p>
+          <ul>
+            <li>Encode the map whenever the car goes through: As being shown in the video, a matrix is <strong>continuously created</strong> to remember the map.
+            By doing this, we can compare the matrices so that the car will not repeat the same route unless it reaches the wanted color</li>
+            <li>The decimal element in the matrix represents a 4-bit binary numbers, corresponding to 4 directions</li>
+            <li>The matrix is reset once the model gets to the color.</li>
+          </ul>
+          <p>
+            Limitations: We did not have resources to determine the shortest way to the destination at the beginning because only two sensors were provided.
+          </p>
+        </div>
+        <div class="project-video">
+          <!-- Replace 'dQw4w9WgXcQ' with your actual YouTube video ID -->
+          <iframe src="https://www.youtube.com/watch?v=XTqInwcWXAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </section>
   </div>
 
