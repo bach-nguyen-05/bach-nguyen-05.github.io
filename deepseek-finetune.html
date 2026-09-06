@@ -5,47 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DeepSeek-R1 Fine-Tune and Benchmark | Bach Nguyen</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    /* Zoom in the entire page */
-    body {
-      zoom: 1.2; /* Adjust this value to increase or decrease the zoom level */
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
-  <div class="navbar">
-    <div class="brand">Bach Nguyen</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a href="index.html" class="masthead__title">Bach Nguyen</a>
+      <nav class="masthead__nav">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html" class="is-active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- PROJECT DETAILS -->
-  <div class="container">
-    <section id="project-details">
-      <h2>DeepSeek-R1 Fine-Tune and Benchmark</h2>
+  <!-- PAGE -->
+  <div class="page">
+    <main class="content" style="max-width: 820px;">
+      <p><a href="projects.html">&larr; Back to Projects</a></p>
+      <h1>DeepSeek-R1 Fine-Tune and Benchmark <span class="tag">NLP</span></h1>
+
       <p>
-        This project involved fine-tuning the DeepSeek-R1 model on a reasoning data. Low Rank Adaptation (LoRA) is used to efficiently train the model
-         and benchmarking using "biobertscore" model on the rest of the dataset that was not used to train.
-        <br><br>
-        <strong>Technologies Used:</strong> Python, PyTorch, Hugging Face Transformers.
-        <br><br>
-        <strong>Key Achievements:</strong>
+        This project involved fine-tuning the DeepSeek-R1 model on a reasoning
+        dataset. Low-Rank Adaptation (LoRA) was used to train the model
+        efficiently, and benchmarking was done with the "biobertscore" model on
+        the held-out portion of the dataset.
       </p>
+      <p><strong>Technologies used:</strong> Python, PyTorch, Hugging Face Transformers.</p>
+      <p><strong>Key achievements:</strong></p>
       <ul>
-        <li>Achieved a 0.5% improvement in accuracy on the benchmark dataset.</li>
-        <li>Optimized the model for faster inference times.</li>
-        <li>Saved post-trained model in gguf and run on an Android phone locally</li>
+        <li>Improved accuracy on the benchmark dataset.</li>
+        <li>Optimized the model for faster inference.</li>
+        <li>Exported the post-trained model to GGUF and ran it locally on an Android phone.</li>
       </ul>
-      <a href="projects.html">Back to Projects</a>
-    </section>
+      <p>
+        <a class="btn" href="https://github.com/bach-nguyen-05/Fine-tuned-DeepSeek-R1" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>View on GitHub</a>
+      </p>
+    </main>
   </div>
 
   <!-- FOOTER -->

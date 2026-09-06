@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Bach Nguyen</title>
+  <title>Publications | Bach Nguyen</title>
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
@@ -15,9 +15,9 @@
       <a href="index.html" class="masthead__title">Bach Nguyen</a>
       <nav class="masthead__nav">
         <a href="index.html">About</a>
-        <a href="publications.html">Publications</a>
+        <a href="publications.html" class="is-active">Publications</a>
         <a href="projects.html">Projects</a>
-        <a href="contact.html" class="is-active">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -41,22 +41,34 @@
 
     <!-- MAIN CONTENT -->
     <main class="content">
-      <h1>Contact</h1>
+      <h1>Publications</h1>
       <p class="lead">
-        I'm always happy to talk about research, projects, or collaboration.
+        My research focuses on the reasoning of multimodal large language models —
+        how they handle noisy evidence, uncertainty, and hallucinations.
       </p>
-      <p>
-        The fastest way to reach me is by email at
-        <a href="mailto:dnguy154@asu.edu">Bach.Nguyen@asu.edu</a>. You can also
-        find me on the platforms below.
-      </p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/bachnd05/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn</a></li>
-        <li><a href="https://github.com/bach-nguyen-05" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>&nbsp; GitHub</a></li>
-      </ul>
-      <p>
-        <a class="btn" href="doc/resume.pdf" download target="_blank" rel="noopener"><i class="fa-solid fa-download"></i>Download my resume</a>
-      </p>
+
+      <div class="pub">
+        <h3 class="pub__title">
+          <a href="https://arxiv.org/pdf/2605.23141" target="_blank" rel="noopener">VisAnalog: A Diagnostic Suite for Visual Concept Transfer on Natural Images</a>
+          <span class="tag">Published</span>
+        </h3>
+        <p class="pub__authors"><strong>Bach Nguyen</strong> (co-author), in collaboration with UC Davis.</p>
+        <p class="pub__venue">Accepted at the CVPR Workshop on Visual Concepts (VisCon), 2026.</p>
+        <p class="pub__links">
+          <a href="https://arxiv.org/pdf/2605.23141" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i>&nbsp;PDF</a>
+          <a href="https://arxiv.org/abs/2605.23141" target="_blank" rel="noopener"><i class="fa-solid fa-link"></i>&nbsp;arXiv</a>
+        </p>
+      </div>
+
+      <div class="pub">
+        <h3 class="pub__title">
+          How Well Do LLMs Reason with Noisy Evidence? An Active Visual Reasoning Benchmark
+          <span class="tag">Under review</span>
+        </h3>
+        <p class="pub__authors"><strong>Bach Nguyen</strong> (first author).</p>
+        <p class="pub__venue">Under review at NAACL 2027.</p>
+        <p class="pub__note">Details will be shared once the paper is released.</p>
+      </div>
     </main>
   </div>
 

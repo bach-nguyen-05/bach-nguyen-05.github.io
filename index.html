@@ -5,109 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About me | Bach Nguyen</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    /* Zoom in the entire page */
-    body {
-      zoom: 1.2; /* Adjust this value to increase or decrease the zoom level */
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
-  <div class="navbar">
-    <div class="brand">Bach Nguyen</div>
-    <div class="nav-links">
-      <a href="#intro">About me</a>
-      <a href="projects.html" target="_blank">Projects</a>
-      <a href="#contact">Contact</a>
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a href="index.html" class="masthead__title">Bach Nguyen</a>
+      <nav class="masthead__nav">
+        <a href="index.html" class="is-active">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- MAIN CONTENT CONTAINER -->
-  <div class="container">
+  <!-- PAGE -->
+  <div class="page">
 
-    <!-- INTRO SECTION -->
-    <section id="intro">
-      <!-- Replace 'self.png' with your own image file or an online image URL -->
-      <img src="self.png" alt="Profile Photo" />
-      <div class="intro-text">
-        <h2>About Me</h2>
-        <p>
-          Hello! I am <strong>Bach Nguyen</strong>, an undergraduate student in Computer Science
-          at <em>Arizona State University</em>. I mainly focus on
-          Natural Language Processing (NLP), Computer Vision, and Artificial Neural Networks.
-          I enjoy exploring new ideas and collaborating with talented people. I am excited to dive into the unknowns
-          and face any difficulties. <br><br>
-          Back in high school, I got into a specialized math class for only 30 gifted students in my city, where I was able to
-          immerse myself in advanced math early, such as linear algebra, calculus, and statistics. In my senior year, I achieved the first prize in the city math
-          competition out of 300 selected students.
-        </p>
-      </div>
-    </section>
+    <!-- AUTHOR SIDEBAR -->
+    <aside class="sidebar">
+      <img class="sidebar__avatar" src="self.png" alt="Bach Nguyen" />
+      <h1 class="sidebar__name">Bach Nguyen</h1>
+      <p class="sidebar__tagline">Research Assistant · AI Reasoning Lab, Arizona State University</p>
+      <ul class="sidebar__links">
+        <li><span><i class="icon fa-solid fa-location-dot"></i>Tempe, AZ</span></li>
+        <li><a href="mailto:dnguy154@asu.edu"><i class="icon fa-solid fa-envelope"></i>Bach.Nguyen@asu.edu</a></li>
+        <li><a href="https://github.com/bach-nguyen-05" target="_blank" rel="noopener"><i class="icon fa-brands fa-github"></i>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/bachnd05/" target="_blank" rel="noopener"><i class="icon fa-brands fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="doc/resume.pdf" target="_blank" rel="noopener"><i class="icon fa-solid fa-file-pdf"></i>Curriculum Vitae</a></li>
+      </ul>
+    </aside>
 
-    <!-- EDUCATION SECTION -->
-    <section id="education">
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <h1>About Me</h1>
+      <p class="lead">
+        Research Assistant in the AI Reasoning Lab at Arizona State University,
+        working on the reasoning of multimodal large language models under
+        uncertainty.
+      </p>
+
+      <p>
+        Hello! I am <strong>Bach Nguyen</strong>, an undergraduate student in
+        Computer Science at <em>Arizona State University</em> and a Research
+        Assistant in the AI Reasoning Lab, where I work with
+        <strong>Professor Ben Zhou</strong> (ARC Lab) and PhD researchers on
+        multimodal LLM reasoning and decision-making under uncertainty —
+        including frameworks for handling model hallucinations. I lead a research
+        effort on an active reasoning benchmark for multimodal LLMs that enables
+        iterative uncertainty resolution.
+      </p>
+      <p>
+        My interests span Natural Language Processing, Computer Vision, and
+        multimodal reasoning. I enjoy exploring new ideas and collaborating with
+        talented people, and I am excited to dive into the unknowns and face any
+        difficulties.
+      </p>
+      <p>
+        Back in high school, I was admitted to a specialized math class for only
+        30 gifted students in my city, where I immersed myself in advanced math
+        early — linear algebra, calculus, and statistics. In my senior year, I
+        achieved first prize in the city math competition out of 300 selected
+        students.
+      </p>
+
       <h2>Education</h2>
       <ul>
         <li>
-          Arizona State University – Bachelor of Science in Computer Science, expected 2027.
+          <strong>Arizona State University</strong> — B.S. in Computer Science,
+          Aug 2023 – expected May 2027. Specialty: NLP, Computer Vision, and
+          reasoning in multimodal models.
         </li>
-        <li>
-          GPA: 4.0, Dean's List
-        </li>
+        <li>GPA: 4.0 / 4.0 · Dean's List</li>
       </ul>
-    </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-      <h2>Projects</h2>
+      <h2>Experience</h2>
       <ul>
         <li>
-          <a href="doc/LLM_Report.pdf" target="_blank">Report on how Transformers and Large Language Models (LLMs) work</a>
+          <strong>Research Assistant, AI Reasoning Lab</strong> — Arizona State
+          University (May 2025 – Present). Multimodal LLM reasoning and
+          decision-making under uncertainty; co-authored a benchmark evaluating
+          vision-language models on visual analogies.
         </li>
         <li>
-          <a href="https://github.com/bach-nguyen-05/Fine-tuned-DeepSeek-R1" target="_blank">DeepSeek-R1 Fine-Tune on a Reasoning Dataset and Benchmark</a>
+          <strong>Mathematics Teaching Assistant</strong> — Arizona State
+          University (Aug 2024 – Present). Support teaching for College Algebra,
+          Discrete Math, and Calculus II across classes of ~80 students.
         </li>
-        <li>
-          <a href="https://github.com/bach-nguyen-05/Local-LLMs-on-Android" target="_blank">Tutorial: How to run any light-weight LLMs locally on an Android phone</a>
-          <br><em style="margin-left: 20px;">Note:</em> User interface does not support multimodal features. An Ollama method will be posted soon!
-        </li>
-        <li>
-          <a href="https://github.com/bach-nguyen-05/CNN-Animal-Classifier" target="_blank">My Animals Classifier (Convolutional Neural Network)</a>
-        </li>
-        <li>
-          <a href="https://github.com/bach-nguyen-05/OpenCV" target="_blank">OpenCV Object Detection</a>
-        </li>
-        <li>
-          <a href="autonomous-car.html" target="_blank">Autonomous Car</a>
-        </li>
-        <li><em>Note: I am currently working on multimodal LLMs.</em></li>
       </ul>
-    </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
+      <h2>Publications</h2>
+      <div class="pub">
+        <h3 class="pub__title">
+          <a href="https://arxiv.org/pdf/2605.23141" target="_blank" rel="noopener">VisAnalog: A Diagnostic Suite for Visual Concept Transfer on Natural Images</a>
+          <span class="tag">Published</span>
+        </h3>
+        <p class="pub__authors"><strong>Bach Nguyen</strong> (co-author), in collaboration with UC Davis.</p>
+        <p class="pub__venue">Accepted at the CVPR Workshop on Visual Concepts (VisCon), 2026.</p>
+      </div>
+      <div class="pub">
+        <h3 class="pub__title">
+          How Well Do LLMs Reason with Noisy Evidence? An Active Visual Reasoning Benchmark
+          <span class="tag">Under review</span>
+        </h3>
+        <p class="pub__authors"><strong>Bach Nguyen</strong> (first author).</p>
+        <p class="pub__venue">Under review at NAACL 2027.</p>
+      </div>
+      <p><a href="publications.html">See all publications &rarr;</a></p>
+
+      <h2>Selected Projects</h2>
+      <ul>
+        <li>
+          <a href="doc/LLM_Report.pdf" target="_blank" rel="noopener">Report on how Transformers and Large Language Models (LLMs) work</a>
+        </li>
+        <li>
+          <a href="https://github.com/bach-nguyen-05/Fine-tuned-DeepSeek-R1" target="_blank" rel="noopener">DeepSeek-R1 fine-tune on a reasoning dataset and benchmark</a>
+        </li>
+        <li>
+          <a href="https://github.com/bach-nguyen-05/Local-LLMs-on-Android" target="_blank" rel="noopener">Tutorial: running light-weight LLMs locally on an Android phone</a>
+        </li>
+        <li>
+          <a href="https://github.com/bach-nguyen-05/CNN-Animal-Classifier" target="_blank" rel="noopener">Animals classifier (Convolutional Neural Network)</a>
+        </li>
+        <li>
+          <a href="https://github.com/bach-nguyen-05/OpenCV" target="_blank" rel="noopener">OpenCV object detection</a>
+        </li>
+        <li>
+          <a href="autonomous-car.html">Autonomous car</a>
+        </li>
+      </ul>
+      <p>
+        <a href="projects.html">See all projects &rarr;</a>
+      </p>
+
       <h2>Contact</h2>
       <p>
-        Feel free to reach out if you’d like to collaborate or learn more about my work.
-        You can email me at <a href="mailto:dnguy154@asu.edu" target="_blank">Bach.Nguyen@asu.edu</a>.
+        Feel free to reach out if you'd like to collaborate or learn more about
+        my work. You can email me at
+        <a href="mailto:dnguy154@asu.edu">Bach.Nguyen@asu.edu</a>, or find me on
+        <a href="https://www.linkedin.com/in/bachnd05/" target="_blank" rel="noopener">LinkedIn</a>
+        and
+        <a href="https://github.com/bach-nguyen-05" target="_blank" rel="noopener">GitHub</a>.
       </p>
       <p>
-        You can also find me on:
-        <ul>
-          <li><a href="https://www.linkedin.com/in/bachnd05/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/bach-nguyen-05" target="_blank">GitHub</a></li>
-        </ul>
+        <a class="btn" href="doc/resume.pdf" download target="_blank" rel="noopener"><i class="fa-solid fa-download"></i>Download my resume</a>
       </p>
-      <!-- Download Resume Button -->
-      <div style="margin-top: 20px;">
-        <a href="doc/resume.pdf" download target="_blank" style="padding: 10px 20px; background-color: #5497cef1; color: #fff; text-decoration: none; border-radius: 5px;">Download My Resume</a>
-      </div>
-    </section>
+    </main>
   </div>
 
   <!-- FOOTER -->
